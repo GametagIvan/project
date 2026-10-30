@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f1fc;
+            background: #ffffff;
             color: #25213a;
             margin: 0;
             padding: 20px;
@@ -23,24 +23,18 @@
         }
 
         header {
-            background-color: #4b2ca3;
-            color: white;
-            padding: 25px;
-            border-radius: 12px;
+            color: #4b2ca3;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 28px;
         }
 
         section {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px #00000010;
+            margin-bottom: 26px;
         }
 
         h2 {
-            color: #603dc1;
+            color: #4b2ca3;
+            margin-bottom: 8px;
         }
 
         .equipment-image {
@@ -49,17 +43,17 @@
             max-width: 100%;
             height: auto;
             margin: 15px 0;
-            border-radius: 10px;
         }
 
         li {
             margin-bottom: 8px;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background-color: white;
+            background: white;
         }
 
         th, td {
@@ -69,63 +63,36 @@
         }
 
         th {
-            background-color: #4b2ca3;
+            background: #4b2ca3;
             color: white;
         }
 
         tbody tr:nth-child(even) {
-            background-color: #f4f1fc;
+            background: #f7f5fc;
         }
 
         .literature-block {
-            background: linear-gradient(135deg, #ffffff, #f0eaff);
-            border: 1px solid #d5c7f5;
-            border-left: 5px solid #4b2ca3;
-            border-radius: 14px;
-            padding: 25px;
-            margin: 30px 0 10px;
-            box-shadow: 0 4px 14px #4b2ca315;
-        }
-
-        .literature-block h2 {
-            margin-top: 0;
-            margin-bottom: 8px;
-        }
-
-        .literature-block .literature-description {
-            color: #625779;
-            margin-top: 0;
-            margin-bottom: 18px;
-        }
-
-        .literature-block ol {
-            padding-left: 24px;
-            margin-bottom: 18px;
-        }
-
-        .literature-block li {
-            margin-bottom: 12px;
+            margin-top: 30px;
         }
 
         .literature-block a {
             color: #4b2ca3;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .literature-block a:hover {
             text-decoration: underline;
-            color: #7654d6;
         }
 
-        .literature-block .literature-note {
-            background: #eee7ff;
-            border-radius: 8px;
-            padding: 12px 15px;
-            color: #51436f;
-            margin-top: 18px;
-        }
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
 
+            table {
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 6px 4px;
+            }
+        }
     </style>
 </head>
 
@@ -237,15 +204,6 @@
             <li>Wi-Fi-роутер с диапазонами 2,4 и 5 ГГц.</li>
             <li>Игровой контроллер PlayStation для дополнительного эксперимента.</li>
             <li>Средства измерения и таблица для записи результатов.</li>
-            <li>Разработанный сайт для ввода и обработки результатов эксперимента, 
-                расчёта медианных значений задержки и построения графиков 
-                для сравнения полученных данных.
-               <a href="https://mediana-1.onrender.com"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Открыть сайт измерений
-                </a>
-            </li>
         </ul>
 
         <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
@@ -262,13 +220,7 @@
                 style="width: 220px; max-width: 100%; border-radius: 10px;"
     >
 
-            <div style="width: 180px; max-width: 100%; text-align: center;">
-                <img
-                    src="qr-code.png"
-                    alt="QR-код сайта измерений"
-                    style="width: 100%; height: auto; border-radius: 10px;"
-                >
-            </div>
+
         </div>
     </section>
 
@@ -413,7 +365,5 @@
 
 </main>
 
-</body>
-</html>
 </body>
 </html>
